@@ -1,2 +1,3 @@
 # stocks
- node thing to steal stocks
+konia z rzędem temu, kto przeczyta readME
+
