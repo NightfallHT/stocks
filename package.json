@@ -1,0 +1,23 @@
+{
+  "name": "cryptos",
+  "version": "1.0.0",
+  "description": "crypto for stinks",
+  "main": "index.js",
+  "author": "chamster",
+  "license": "MIT",
+  "dependencies": {
+    "argparse": "^2.0.1",
+    "chalk": "^4.1.0",
+    "currencies": "^0.0.2",
+    "currencies-exchange-rates": "^1.0.2",
+    "currency-converter-lt": "^1.1.1",
+    "money": "^0.2.0",
+    "node-fetch": "^2.6.1",
+    "sessionstorage": "^0.1.0",
+    "string-length": "^4.0.2",
+    "yahoo-stock-prices": "^1.1.0"
+  },
+  "scripts": {
+    "start": "node ."
+  }
+}
