@@ -8,7 +8,7 @@ const stringLength = require('string-length');
 let month, day, year, company;
 
 async function getPrice({stock}){
-    const price = await crypto.getCurrentData(stock);
+    const price = await crypto.getCurrentData(stock.toUpperCase());
     return price;
 }
 
@@ -46,7 +46,7 @@ function isToday ({date, stock}){
             return;}
 
         console.log(
-            '\n◤━━━━━━━━━━ '+chalk.bold.rgb(71, 225, 255)(company)+' ━━━━━━━━━━◥ ', 
+            '\n◤━━━━━━━━━━ '+chalk.bold.rgb(71, 225, 255)(company.toUpperCase())+' ━━━━━━━━━━◥ ', 
             chalk.whiteBright('\n  Stock value:'), chalk.bold.green(currencies.get(currency.currency).symbol) + chalk.bold.greenBright((price.price * currency.price).toFixed(2)),'\n◣━━━━━━━━━━━━━━━━━━━━━━'+  '━'.repeat(stringLength(company)) +'◢\n')
     }
     else{
